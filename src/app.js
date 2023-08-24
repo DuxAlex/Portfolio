@@ -12,7 +12,7 @@ app.use ("/projetos", projetos);
 
 db.on("error", console.log.bind(console, "erro de conexão"));
 db.once ("open", () =>{
-    consle.log(
+    console.log(
         chalk.green.bgRgb(180, 180, 180).bold("conexão com o banco feita com sucesso")
     );
 });

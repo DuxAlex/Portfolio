@@ -1,6 +1,6 @@
 import projetos from "../models/projetos.js";
 class ProjetoController{
-    static getAllproejtos = (req, res) => {
+    static getAllProjetos = (req, res) => {
         projetos.find((err, projetos)=>{
             res.status(200).json(projetos);
 
