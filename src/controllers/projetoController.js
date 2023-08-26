@@ -53,7 +53,7 @@ class ProjetoController{
 
         projetos.findByIdAndDelete(id, (err) => {
             if (!err) {
-                res.stauts(200).send({message: "Projeto removido com sucesso."});
+                res.status(200).send({message: "Projeto removido com sucesso."});
             } else {
                 res.status(500).send({ message: err.message});
             }
